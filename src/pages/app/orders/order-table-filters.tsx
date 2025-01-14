@@ -30,11 +30,11 @@ export function OrderTableFilters() {
         </SelectContent>
       </Select>
       <Button variant="secondary" size="xs" type="submit">
-        <Search className="mr-2 h-4 w-4" />
+        <Search className="mr-1 h-4 w-4" />
         Filtrar resultados
       </Button>
       <Button variant="outline" size="xs" type="button">
-        <X className="mr-2 h-4 w-4" />
+        <X className="mr-1 h-4 w-4" />
         Remover filtros
       </Button>
     </form>
