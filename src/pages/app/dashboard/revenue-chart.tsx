@@ -1,4 +1,11 @@
-import { Line, LineChart, ResponsiveContainer, XAxis, YAxis } from "recharts";
+import {
+  CartesianGrid,
+  Line,
+  LineChart,
+  ResponsiveContainer,
+  XAxis,
+  YAxis,
+} from "recharts";
 
 import colors from "tailwindcss/colors";
 
@@ -55,6 +62,8 @@ export function RevenueChart() {
               strokeWidth={2}
               dataKey="revenue"
             />
+
+            <CartesianGrid vertical={false} className="stroke-muted" />
           </LineChart>
         </ResponsiveContainer>
       </CardContent>
