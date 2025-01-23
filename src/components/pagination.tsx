@@ -4,9 +4,10 @@ import {
   ChevronsLeft,
   ChevronsRight,
 } from "lucide-react";
+
 import { Button } from "./ui/button";
 
-export interface PaginationProps {
+interface PaginationProps {
   pageIndex: number;
   totalCount: number;
   perPage: number;
@@ -14,8 +15,8 @@ export interface PaginationProps {
 
 export function Pagination({
   pageIndex,
-  totalCount,
   perPage,
+  totalCount,
 }: PaginationProps) {
   const pages = Math.ceil(totalCount / perPage) || 1;
 
